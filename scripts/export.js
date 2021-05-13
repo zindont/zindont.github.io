@@ -59,7 +59,8 @@ const convert = async () => {
         args: ["--no-sandbox"]
       });
       const page = await browser.newPage();
-      await page.goto(`http://localhost:${config.dev.port}/#/resume/` + dir.name, {
+      console.log(`http://localhost:${config.dev.port}/#/`);
+      await page.goto(`http://localhost:${config.dev.port}/#/`, {
         waitUntil: "networkidle2"
       });
 
@@ -68,6 +69,11 @@ const convert = async () => {
       ) {
         fs.mkdirSync(fullDirectoryPath);
       }
+
+      await page.addStyleTag({
+        content: '@page { size: a3; }',
+      });
+
       await page.pdf({
         path: fullDirectoryPath + dir.name + ".pdf",
         format: "A4"

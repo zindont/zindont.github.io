@@ -1,6 +1,6 @@
 <template>
   <div class="page-wrapper">
-    <div class="page" :id="resumeId">
+    <div class="page" :id="resumeId" :class="resumeId">
       <div class="page-inner">
         <component :is="resumeId"></component>
       </div>
@@ -15,7 +15,7 @@ export default Vue.component("resume", {
   name: "app",
   data() {
     return {
-      resumeId: "material-dark"
+      resumeId: "cool"
     };
   }
 });

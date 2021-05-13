@@ -17,7 +17,7 @@
             {{ person.about }}
             <br/>
             <br/>
-            {{ person.knowledge }}
+            <span v-html="person.knowledge"></span>
           </div>
         </div>
 
@@ -47,9 +47,9 @@
           </div>
 
           <div class="section-content section-content--plain">
-            <div class="section-link">
+            <!-- <div class="section-link">
               <i class="section-link__icon material-icons">business</i>{{ person.contact.street }}
-            </div>
+            </div> -->
 
             <a
               class="section-link"
@@ -57,9 +57,9 @@
               <i class="section-link__icon material-icons">mail</i>{{ person.contact.email }}
             </a>
 
-            <div class="section-link">
+            <!-- <div class="section-link">
               <i class="section-link__icon material-icons">phone</i>{{ person.contact.phone }}
-            </div>
+            </div> -->
 
             <a
               v-if="person.contact.website"
@@ -144,9 +144,9 @@
             <i class="section-headline__icon material-icons">code</i>{{ lang.projects }}
           </div>
 
-          <div class="section-content-grid">
+          <div class="section-content">
             <a v-for="(project, index) in person.projects" :key="index"
-              class="section-content__item-grid"
+              class="section-content__item"
               :href="project.url">
               <span class="section-content__header"> {{ project.name }} </span>
               <span class="section-content__subheader">{{ project.platform }}</span>
@@ -362,6 +362,10 @@ a {
   margin-bottom: 5px;
 }
 
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
 .grid-item {
   padding-right: 5px;
 }
@@ -372,5 +376,17 @@ a {
   color: white;
   margin-top: 5px;
   padding: 5px;
+}
+</style>
+
+<style lang="less">
+.page {
+  &.cool{
+    width: 100% !important;
+  }
+
+  .content__left{
+    height: auto !important;
+  }
 }
 </style>

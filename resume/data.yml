@@ -3,16 +3,21 @@ name:
   first: An
   middle:
   last: Ho
-about: Hi, my name is John Doe. I"m just about the most boring type of person you could
-       possibly imagine. I like collecting leaves from the tree in my back yard and documenting
-       each time I eat a peanut that is non-uniform. I am not a robot. Please hire me.
-position: Senior WordPress Developer
+about: Hi, my name is An Ho. I"m just a very funny web developer from Nha Trang, Viet Nam. I love travelling and listen to music.
+       I can working/coding all the day with coffee. Writing a new line of code is the thing I loved the most. Thanks for viewed my profile, hit CONNECT and we can be friends.
+position: Senior Backend Developer
 
 birth:
   year: 1991
   location: Nha Trang
 
 experience:
+- company: DevPanel
+  position: Backend Developer and DevOps Engineer
+  timeperiod: Since May 2020
+  description: Help to running some very big site using AWS
+  website: https://devpanel.com/
+
 - company: INFOdation
   position: Technical Lead
   timeperiod: Since May 2018
@@ -20,7 +25,7 @@ experience:
   website: https://infodation.com
 
 - company: Bestarion
-  position: Frontend developer
+  position: Frontend Developer
   timeperiod: January 2020 - March 2020
   description: Contribute partime with a Vue.js project.
 
@@ -31,10 +36,10 @@ experience:
   website: https://pangara.com/portfolios/anhtl
 
 - company: WiseRobot
-  position: PHP Developer
+  position: Backend Developer
   timeperiod: November 2014 - May 2018
-  description: Write the code, do the test, and fix the bugs.
-  website: https://infodation.com
+  description: Write the code, do the test, and fix the bugs. working with PHP and Nodejs project
+  website: https://wiserobot.com/
 
 - company: ZHD Consulting
   position: PHP Developer
@@ -51,6 +56,10 @@ education:
 skills:
 - name: WordPress
   level: 100
+- name: PHP
+  level: 99
+- name: Nodejs
+  level: 99
 - name: HTML5
   level: 98
 - name: CSS3
@@ -63,8 +72,6 @@ skills:
   level: 80
 - name: Nuxt.js
   level: 85
-- name: PHP
-  level: 99
 - name: Docker
   level: 40
 - name: Linux
@@ -73,64 +80,93 @@ skills:
   level: 95
 - name: AWS
   level: 20
-knowledge: Also proficient in Adobe Photoshop and Illustrator, grew up bilingual
-  (English and Klingon).
+knowledge: "- Expert in WordPress platform, include plugins, template, hook, filters...and something magic.. <br>
+- Strong at HTML5/CSS/JS. Slice HTML in the fastest time.<br>
+- 4 years with Nodejs.<br>
+- 3 years working with Magento, I can work also frontend and backend. both Magento 1 & 2.<br>
+- 5 years working on Linux system.<br>
+- 4 years experiences in Server Management, about optimize, security on CentOS, Ubuntu, Debian."
 
 projects:
+- name: EE Accommodations
+  platform: Javascript/Nodejs
+  description: Working as an backend guy using Nodejs, MongoDB, Google Cloud Console
+  url: https://homee.nu
+
+- name: ScoutCentral
+  platform: Javascript/Nodejs
+  description: Working as an backend guy using Nodejs
+
+- name: VUReflect
+  platform: Javascript/Nodejs
+  description: Working as an backend guy using Nodejs
+
+- name: Pliable.io
+  platform: Javascript/Nodejs/ElasticSearch
+  description: Working as an backend guy using Nodejs and Elastic Search
+  url: https://pliable.io/
+
 - name: Tapajos.se
   platform: WordPress
   timeperiod: Since February 2020
   description: Tapajos Fastighets AB is a real estate and planning company.
   url: https://tapajos.se
+
 - name: Kamixa
   platform: WordPress + WooCommerce + Vue.js
   timeperiod: Since December 2019
   description: At Kamixa you will find a mix of fresh and fun interior design.
   url: https://kamixa.se
+
 - name: Motion Design
-  platform: Vue.js + Nuxt.js + AWS
+  platform: Vue.js + Nuxt.js + AWS + Nodejs
   timeperiod: Since June 2018
-  description: Nha8.vn sells organic products and powder that are used for skin care routine.
-  url: https://nha8.vn
+  description: Make animation on HTML element with one click
+  url: http://motion-design.app
+
 - name: HAITRUNGSHIPPING
   platform: WordPress + WooCommerce
   timeperiod: Since March 2018
   description: Build the tracking system, integrate with WooCommerce.
   url: https://haitrungshipping.com
+
 - name: Nha8.vn
   platform: WordPress
   timeperiod: Since February 2017
   description: Add interaction to any website with motion design.
-  url: https://motion-design.app
+  url: https://nha8.vn
+
 - name: Nha Trang Review
   platform: WordPress
   timeperiod: Since 2015
   description: Travel Blog.
   url: https://www.nhatrangreview.info
+
 - name: Nha Trang Dat Viet
   platform: WordPress
   timeperiod: Since 2015
   description: Real estate listing website.
   url: https://nhatrangdatviet.com
+
 - name: Melosa Garden
   platform: WordPress
   timeperiod: Since 2015
   description: Building showcase website.
   url: https://melosagarden.com.vn
 
-hobbies:
-- name: Video Games
-  iconClass: fa fa-gamepad
-  url: https://example.com
+# hobbies:
+# - name: Video Games
+#   iconClass: fa fa-gamepad
+#   url: https://example.com
 
-- name: Drawing
-  iconClass: fa fa-pencil
-  url: https://example.com
+# - name: Drawing
+#   iconClass: fa fa-pencil
+#   url: https://example.com
 
-contributions:
-- name: best-resume-ever
-  description: 👔 💼 Build fast 🚀 and easy multiple beautiful resumes.
-  url: https://github.com/salomonelli/best-resume-ever
+# contributions:
+# - name: best-resume-ever
+#   description: 👔 💼 Build fast 🚀 and easy multiple beautiful resumes.
+#   url: https://github.com/salomonelli/best-resume-ever
 
 contact:
   email: an.ho1991@gmail.com
