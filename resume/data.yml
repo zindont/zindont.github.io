@@ -12,9 +12,15 @@ birth:
   location: Nha Trang
 
 experience:
+- company: ICW
+  position: Backend Nodejs Developer
+  timeperiod: October 2021 - October 2023
+  description: Quality Compliance Management software Platform
+  website: https://icw.io/
+
 - company: DevPanel
   position: Backend Developer and DevOps Engineer
-  timeperiod: Since May 2020
+  timeperiod: May 2020 - August 2023
   description: Help to running some very big site using AWS
   website: https://devpanel.com/
 
@@ -82,12 +88,22 @@ skills:
   level: 20
 knowledge: "- Expert in WordPress platform, include plugins, template, hook, filters...and something magic.. <br>
 - Strong at HTML5/CSS/JS. Slice HTML in the fastest time.<br>
-- 4 years with Nodejs.<br>
+- 6 years with Nodejs.<br>
 - 3 years working with Magento, I can work also frontend and backend. both Magento 1 & 2.<br>
-- 5 years working on Linux system.<br>
-- 4 years experiences in Server Management, about optimize, security on CentOS, Ubuntu, Debian."
+- 7 years working on Linux system.<br>
+- 6 years experiences in Server Management, about optimize, security on CentOS, Ubuntu, Debian."
 
 projects:
+- name: ICW - QMAS
+  platform: Nodejs/Typescript/Nestjs
+  description: Develop backend for ICW system using Nestjs
+  url: https://qmas.icw.io/
+
+- name: The Nueva School
+  platform: PHP
+  description: Develop the internal management platform using PHP
+  url: https://my.nuevaschool.org/
+
 - name: EE Accommodations
   platform: Javascript/Nodejs
   description: Working as an backend guy using Nodejs, MongoDB, Google Cloud Console
