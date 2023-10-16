@@ -9,7 +9,7 @@
     "url": "git+https://github.com/salomonelli/best-resume-ever.git"
   },
   "scripts": {
-    "docs": "node build/build.js",
+    "docs": "NODE_OPTIONS=--openssl-legacy-provider node build/build.js",
     "docs:serve": "cd docs/ && ws --port 8081 --rewrite '/best-resume-ever/* -> /$1'",
     "dev": "NODE_OPTIONS=--openssl-legacy-provider node build/dev-server.js",
     "start": "node build/dev-server.js",

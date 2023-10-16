@@ -105,8 +105,8 @@ projects:
   url: https://my.nuevaschool.org/
 
 - name: EE Accommodations
-  platform: Javascript/Nodejs
-  description: Working as an backend guy using Nodejs, MongoDB, Google Cloud Console
+  platform: Javascript/Nodejs/Strapi
+  description: Working as an backend guy using Nodejs, MongoDB, Google Cloud Console, use Strapi.io as a Headless CMS
   url: https://homee.nu
 
 - name: ScoutCentral
