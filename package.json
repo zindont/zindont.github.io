@@ -10,7 +10,7 @@
   },
   "scripts": {
     "docs": "NODE_OPTIONS=--openssl-legacy-provider node build/build.js",
-    "docs:serve": "cd docs/ && ws --port 8081 --rewrite '/best-resume-ever/* -> /$1'",
+    "docs:serve": "NODE_OPTIONS=--openssl-legacy-provider cd docs/ && ws --port 8081 --rewrite '/best-resume-ever/* -> /$1'",
     "dev": "NODE_OPTIONS=--openssl-legacy-provider node build/dev-server.js",
     "start": "node build/dev-server.js",
     "pdf": "node scripts/export.js",
