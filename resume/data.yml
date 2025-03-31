@@ -12,6 +12,12 @@ birth:
   location: Nha Trang
 
 experience:
+- company: Wizy.vn
+  position: Technical Lead
+  timeperiod: Since June 2021
+  description: Wizy is a technology company specializing in software solutions and digital services for the global market.
+  website: https://wizy.vn/
+  
 - company: ICW
   position: Backend Nodejs Developer
   timeperiod: October 2021 - October 2023
@@ -37,7 +43,7 @@ experience:
 
 - company: Pangara AB
   position: Seinor WordPress Developer
-  timeperiod: Since January 2018
+  timeperiod: January 2018 - March 2022
   description: One of our most valued talents of Pangaria.
   website: https://pangara.com/portfolios/anhtl
 
@@ -85,7 +91,7 @@ skills:
 - name: Git
   level: 95
 - name: AWS
-  level: 20
+  level: 80
 knowledge: "- Expert in WordPress platform, include plugins, template, hook, filters...and something magic.. <br>
 - Strong at HTML5/CSS/JS. Slice HTML in the fastest time.<br>
 - 6 years with Nodejs.<br>
@@ -95,7 +101,7 @@ knowledge: "- Expert in WordPress platform, include plugins, template, hook, fil
 
 projects:
 - name: ICW - QMAS
-  platform: Nodejs/Typescript/Nestjs
+  platform: Nodejs/Typescript/Nestjs/React
   description: Develop backend for ICW system using Nestjs
   url: https://qmas.icw.io/
 
