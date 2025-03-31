@@ -12,6 +12,12 @@ birth:
   location: Nha Trang
 
 experience:
+- company: Marketflow
+  position: Technical Lead
+  timeperiod: Since June 2021
+  description: Integrate payment solution for client.
+  website: https://marketflow.com/
+  
 - company: Wizy.vn
   position: Technical Lead
   timeperiod: Since June 2021
