@@ -1,0 +1,74 @@
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import { Section } from "@/components/ui/section";
+import type { RESUME_DATA } from "@/data/resume-data";
+
+type Education = (typeof RESUME_DATA)["education"][number];
+
+interface EducationPeriodProps {
+  start: Education["start"];
+  end: Education["end"];
+}
+
+function EducationPeriod({ start, end }: EducationPeriodProps) {
+  return (
+    <div
+      className="text-sm tabular-nums text-muted-foreground"
+      title={`Period: ${start} to ${end}`}
+    >
+      {start} - {end}
+    </div>
+  );
+}
+
+interface EducationItemProps {
+  education: Education;
+}
+
+function EducationItem({ education }: EducationItemProps) {
+  const { school, start, end, degree } = education;
+  const schoolId = `education-${school.toLowerCase().replace(/\s+/g, "-")}`;
+
+  return (
+    <Card className="border border-border/70 bg-white/75 p-4 print:border-none print:bg-transparent print:p-0">
+      <CardHeader className="space-y-0">
+        <div className="flex items-center justify-between gap-x-2 text-base">
+          <h3 className="font-semibold leading-none" id={schoolId}>
+            {school}
+          </h3>
+          <EducationPeriod start={start} end={end} />
+        </div>
+      </CardHeader>
+      <CardContent
+        className="mt-1 text-sm text-foreground/80 print:text-[12px]"
+        aria-labelledby={schoolId}
+      >
+        {degree}
+      </CardContent>
+    </Card>
+  );
+}
+
+interface EducationListProps {
+  education: readonly Education[];
+}
+
+export function Education({ education }: EducationListProps) {
+  return (
+    <Section>
+      <h2 className="section-title" id="education-section">
+        Education
+      </h2>
+      <div
+        className="space-y-3"
+        role="feed"
+        aria-labelledby="education-section"
+      >
+        {education.map((item) => (
+          <article key={item.school}>
+            <EducationItem education={item} />
+          </article>
+        ))}
+      </div>
+    </Section>
+  );
+}

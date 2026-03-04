@@ -1,0 +1,166 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 62% 99%;
+    --foreground: 217 40% 13%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 217 40% 13%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 217 40% 13%;
+
+    --primary: 199 87% 36%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 201 46% 95%;
+    --secondary-foreground: 215 36% 17%;
+
+    --muted: 203 37% 95%;
+    --muted-foreground: 217 18% 42%;
+
+    --accent: 201 46% 95%;
+    --accent-foreground: 215 36% 17%;
+
+    --destructive: 0 76% 57%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 210 36% 89%;
+    --input: 210 36% 89%;
+    --ring: 199 87% 36%;
+
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 216 62% 8%;
+    --foreground: 210 38% 96%;
+
+    --card: 216 48% 10%;
+    --card-foreground: 210 38% 96%;
+
+    --popover: 216 48% 10%;
+    --popover-foreground: 210 38% 96%;
+
+    --primary: 193 82% 56%;
+    --primary-foreground: 217 71% 9%;
+
+    --secondary: 214 32% 18%;
+    --secondary-foreground: 210 38% 96%;
+
+    --muted: 214 28% 17%;
+    --muted-foreground: 214 18% 72%;
+
+    --accent: 214 32% 18%;
+    --accent-foreground: 210 38% 96%;
+
+    --destructive: 0 65% 42%;
+    --destructive-foreground: 210 38% 96%;
+
+    --border: 214 28% 22%;
+    --input: 214 28% 22%;
+    --ring: 193 82% 56%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background font-sans text-foreground antialiased;
+    background-image:
+      radial-gradient(
+        circle at 8% 0%,
+        rgba(166, 225, 255, 0.35),
+        transparent 28%
+      ),
+      radial-gradient(
+        circle at 92% 0%,
+        rgba(173, 236, 226, 0.35),
+        transparent 30%
+      );
+    background-attachment: fixed;
+  }
+
+  ::selection {
+    background-color: hsl(var(--primary) / 0.22);
+  }
+}
+
+a {
+  transition: color 180ms ease;
+}
+
+.resume-surface {
+  background: rgba(255, 255, 255, 0.88);
+  border-radius: 1.2rem;
+  border: 1px solid hsl(var(--border));
+  padding: 1.5rem;
+  box-shadow: 0 20px 44px -34px rgba(22, 37, 75, 0.55);
+}
+
+.section-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.section-title::before {
+  content: "";
+  height: 0.16rem;
+  width: 1.35rem;
+  border-radius: 9999px;
+  background: hsl(var(--primary));
+}
+
+.print-force-new-page {
+  page-break-before: always;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 420ms ease-out both;
+}
+
+@media print {
+  .animate-fade-in {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  body {
+    background: white;
+  }
+
+  .resume-surface {
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    box-shadow: none;
+    background: white;
+  }
+
+  .section-title::before {
+    display: none;
+  }
+}

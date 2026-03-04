@@ -1,0 +1,6 @@
+# Robots.txt for https://zindont.github.io
+
+User-agent: *
+Allow: /
+
+Sitemap: https://zindont.github.io/sitemap.xml
