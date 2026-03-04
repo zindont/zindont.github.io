@@ -5,9 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "build:docs": "rm -rf out docs && next build && cp -R out docs && touch docs/.nojekyll",
     "start": "npx serve out -l 3000",
-    "serve:docs": "npx serve docs -l 8081",
     "lint": "biome lint ./src",
     "lint:fix": "biome lint --write ./src",
     "format": "biome format ./src",

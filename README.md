@@ -34,11 +34,12 @@ npm run build
 
 Output folder: `out/`
 
-Build and copy static output to `docs/` (for GitHub Pages workflow using `/docs`):
+## Deploy
 
-```bash
-npm run build:docs
-```
+GitHub Pages is deployed by GitHub Actions from the `out/` artifact:
+
+- Workflow: `.github/workflows/deploy-pages.yml`
+- Trigger: push to `src` branch (or manual `workflow_dispatch`)
 
 ## Quality checks
 
