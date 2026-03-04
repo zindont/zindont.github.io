@@ -97,7 +97,10 @@ export default function ResumePage() {
 
           <div className="space-y-8 print:space-y-4">
             <div className="animate-fade-in" style={{ animationDelay: "75ms" }}>
-              <Summary summary={RESUME_DATA.summary} />
+              <Summary
+                summary={RESUME_DATA.summary}
+                impactHighlights={RESUME_DATA.impactHighlights}
+              />
             </div>
             <div
               className="animate-fade-in"

@@ -13,6 +13,7 @@ export interface ResumeData {
   locationLink: string;
   about: string;
   summary: string;
+  impactHighlights?: string[];
   avatarUrl: string;
   personalWebsiteUrl: string;
   contact: {

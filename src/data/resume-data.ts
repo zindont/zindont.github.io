@@ -8,7 +8,13 @@ export const RESUME_DATA: ResumeData = {
   about:
     "Technical Lead and Senior Backend Engineer specializing in scalable Node.js systems and delivery execution.",
   summary:
-    "Technical Lead and Senior Backend Engineer with 10+ years delivering SaaS, ecommerce, and internal platforms. Led cross-company delivery for long-running client programs (Wizy -> Marketflow), owned Node.js/TypeScript backend architecture, and operated AWS workloads from design through production support.",
+    "Technical Lead and Senior Backend Engineer with 10+ years delivering SaaS, ecommerce, and internal platforms. 7+ years in technical leadership responsibilities across architecture, delivery, and production operations. Led cross-company execution for long-running client programs (Wizy -> Marketflow) and owned Node.js/TypeScript backend systems end to end.",
+  impactHighlights: [
+    "10+ years of engineering delivery across backend and platform roles (Nov 2014 - Present).",
+    "7+ years in technical leadership responsibilities (May 2018 - Present).",
+    "4+ years leading cross-company execution between employer and client (Wizy -> Marketflow, Jun 2021 - Present).",
+    "Hands-on ownership from architecture and implementation to release governance and production support.",
+  ],
   avatarUrl: "/avatar.jpg",
   personalWebsiteUrl: "https://zindo.info",
   contact: {
@@ -173,27 +179,31 @@ export const RESUME_DATA: ResumeData = {
     },
   ],
   skills: [
+    "Technical Leadership",
+    "System Design",
     "Node.js",
     "TypeScript",
     "NestJS",
-    "PHP",
-    "WordPress",
-    "WooCommerce",
+    "REST APIs",
+    "Backend Architecture",
+    "CI/CD",
     "AWS",
     "Docker",
     "Linux",
-    "Vue.js / Nuxt.js",
-    "MySQL / PostgreSQL",
-    "CI/CD",
-    "System Architecture",
     "Payment Integrations",
+    "MySQL / PostgreSQL",
+    "PHP",
+    "WordPress",
+    "WooCommerce",
+    "Vue.js / Nuxt.js",
+    "System Architecture",
   ],
   projects: [
     {
       title: "Marketflow Platform Delivery",
       techStack: ["Node.js", "Payments", "SaaS", "Technical Leadership"],
       description:
-        "Long-running backend delivery for payment and business-critical SaaS workflows.",
+        "4+ year backend delivery stream for payment and business-critical SaaS workflows.",
       link: {
         label: "marketflow.com",
         href: "https://marketflow.com/",
@@ -239,13 +249,13 @@ export const RESUME_DATA: ResumeData = {
       },
     },
     {
-      title: "Kamixa",
-      techStack: ["WordPress", "WooCommerce", "Vue.js"],
+      title: "DevPanel High-Traffic Operations",
+      techStack: ["Node.js", "AWS", "DevOps", "CI/CD"],
       description:
-        "Ecommerce implementation and maintenance for interior design storefront experiences.",
+        "Backend and cloud operations ownership for high-traffic production websites over a multi-year engagement.",
       link: {
-        label: "kamixa.se",
-        href: "https://kamixa.se",
+        label: "devpanel.com",
+        href: "https://devpanel.com/",
       },
     },
   ],

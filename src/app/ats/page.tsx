@@ -86,6 +86,18 @@ export default function AtsResumePage() {
           <p>{RESUME_DATA.summary}</p>
         </section>
 
+        {RESUME_DATA.impactHighlights &&
+        RESUME_DATA.impactHighlights.length > 0 ? (
+          <section className="mt-5">
+            <h2 className="text-xl font-bold">Impact Highlights</h2>
+            <ul className="list-disc pl-5">
+              {RESUME_DATA.impactHighlights.map((highlight) => (
+                <li key={highlight}>{highlight}</li>
+              ))}
+            </ul>
+          </section>
+        ) : null}
+
         <section className="mt-5">
           <h2 className="text-xl font-bold">Work Experience</h2>
           {RESUME_DATA.work.map((item) => (
