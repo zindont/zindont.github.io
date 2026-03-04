@@ -3,6 +3,14 @@ import { RESUME_DATA } from "@/data/resume-data";
 const SITE_URL = "https://zindont.github.io";
 
 export function generatePersonStructuredData() {
+  const primaryRole =
+    RESUME_DATA.work.find((job) => job.isPrimaryEmployerRole) ??
+    RESUME_DATA.work[0];
+  const primaryEmployer = primaryRole?.employer ?? {
+    company: primaryRole?.company ?? "",
+    link: primaryRole?.link,
+  };
+
   return {
     "@context": "https://schema.org",
     "@type": "Person",
@@ -25,15 +33,14 @@ export function generatePersonStructuredData() {
       telephone: RESUME_DATA.contact.tel,
       contactType: "professional",
     },
-    jobTitle: "Technical Lead",
-    worksFor:
-      RESUME_DATA.work.length > 0
-        ? {
-            "@type": "Organization",
-            name: RESUME_DATA.work[0].company,
-            url: RESUME_DATA.work[0].link,
-          }
-        : undefined,
+    jobTitle: primaryRole?.title ?? "Technical Lead",
+    worksFor: primaryEmployer.company
+      ? {
+          "@type": "Organization",
+          name: primaryEmployer.company,
+          url: primaryEmployer.link,
+        }
+      : undefined,
     alumniOf: RESUME_DATA.education.map((edu) => ({
       "@type": "EducationalOrganization",
       name: edu.school,

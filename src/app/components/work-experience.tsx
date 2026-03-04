@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Section } from "@/components/ui/section";
@@ -73,9 +74,77 @@ interface WorkExperienceItemProps {
   work: WorkExperience;
 }
 
+interface CompanyMetaProps {
+  label: string;
+  company: string;
+  link?: string;
+}
+
+function CompanyMeta({ label, company, link }: CompanyMetaProps) {
+  return (
+    <>
+      {label}:{" "}
+      {link ? (
+        <a
+          className="underline hover:text-primary"
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {company}
+        </a>
+      ) : (
+        company
+      )}
+    </>
+  );
+}
+
 function WorkExperienceItem({ work }: WorkExperienceItemProps) {
   const { company, link, badges, title, start, end, description, highlights } =
     work;
+
+  const workMeta: Array<{ id: string; node: ReactNode }> = [];
+
+  if (work.engagementType) {
+    workMeta.push({
+      id: "engagement",
+      node: `Engagement: ${work.engagementType}`,
+    });
+  }
+
+  if (work.isPrimaryEmployerRole) {
+    workMeta.push({
+      id: "employment-type",
+      node: "Employment: Primary Employer",
+    });
+  }
+
+  if (work.employer) {
+    workMeta.push({
+      id: `employer-${work.employer.company}`,
+      node: (
+        <CompanyMeta
+          label="Employer"
+          company={work.employer.company}
+          link={work.employer.link}
+        />
+      ),
+    });
+  }
+
+  if (work.client) {
+    workMeta.push({
+      id: `client-${work.client.company}`,
+      node: (
+        <CompanyMeta
+          label="Client"
+          company={work.client.company}
+          link={work.client.link}
+        />
+      ),
+    });
+  }
 
   return (
     <Card className="border border-border/70 bg-white/75 p-4 transition-colors hover:border-primary/35 print:border-none print:bg-transparent print:p-0">
@@ -94,6 +163,16 @@ function WorkExperienceItem({ work }: WorkExperienceItemProps) {
         <h4 className="font-mono text-sm font-semibold leading-none text-foreground/80 print:text-[12px]">
           {title}
         </h4>
+        {workMeta.length > 0 ? (
+          <p className="font-mono text-xs text-primary/80 print:text-[10px] print:text-foreground/80">
+            {workMeta.map((item, index) => (
+              <span key={item.id}>
+                {index > 0 ? " · " : ""}
+                {item.node}
+              </span>
+            ))}
+          </p>
+        ) : null}
       </CardHeader>
 
       <CardContent>

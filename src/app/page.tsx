@@ -35,7 +35,12 @@ export const metadata: Metadata = {
 };
 
 function getCommandMenuLinks() {
-  const links = [];
+  const links = [
+    {
+      url: "/ats",
+      title: "ATS Version",
+    },
+  ];
 
   if (RESUME_DATA.personalWebsiteUrl) {
     links.push({
@@ -71,6 +76,15 @@ export default function ResumePage() {
       >
         <div className="sr-only">
           <h1>{RESUME_DATA.name}&apos;s Resume</h1>
+        </div>
+
+        <div className="mx-auto mb-3 flex w-full max-w-3xl justify-end print:hidden">
+          <a
+            className="text-xs font-mono text-primary hover:underline"
+            href="/ats"
+          >
+            ATS Version
+          </a>
         </div>
 
         <section

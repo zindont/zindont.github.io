@@ -39,6 +39,16 @@ export interface ResumeData {
     end: string | null;
     description: string;
     highlights?: readonly string[];
+    engagementType?: string;
+    isPrimaryEmployerRole?: boolean;
+    employer?: {
+      company: string;
+      link?: string;
+    };
+    client?: {
+      company: string;
+      link?: string;
+    };
   }>;
   skills: string[];
   projects: Array<{

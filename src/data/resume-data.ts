@@ -38,8 +38,22 @@ export const RESUME_DATA: ResumeData = {
       title: "Technical Lead",
       start: "Jun 2021",
       end: null,
+      engagementType: "Client Project",
+      employer: {
+        company: "Wizy.vn",
+        link: "https://wizy.vn/",
+      },
+      client: {
+        company: "Marketflow",
+        link: "https://marketflow.com/",
+      },
       description:
-        "Led backend delivery and payment integrations for client-facing product platforms.",
+        "Led backend delivery and payment integrations for a long-running client program.",
+      highlights: [
+        "Sustained a 4+ year client engagement (Jun 2021 - Present) with continuous delivery of backend features.",
+        "Coordinated requirements and releases between Marketflow stakeholders and the Wizy engineering team.",
+        "Focused on Node.js service integrations for payment and business-critical workflows.",
+      ],
     },
     {
       company: "Wizy.vn",
@@ -48,8 +62,19 @@ export const RESUME_DATA: ResumeData = {
       title: "Technical Lead",
       start: "Jun 2021",
       end: null,
+      engagementType: "Direct Employment",
+      isPrimaryEmployerRole: true,
+      employer: {
+        company: "Wizy.vn",
+        link: "https://wizy.vn/",
+      },
       description:
         "Led technical direction for software solutions and digital services targeting global clients.",
+      highlights: [
+        "Primary employer role from Jun 2021 to Present, leading backend architecture and delivery strategy.",
+        "Directed distributed teams across client engagements, including Marketflow delivery streams.",
+        "Owned technical planning for Node.js systems, release processes, and production support.",
+      ],
     },
     {
       company: "ICW",
@@ -58,8 +83,14 @@ export const RESUME_DATA: ResumeData = {
       title: "Backend Node.js Developer",
       start: "Oct 2021",
       end: "Oct 2023",
+      engagementType: "Project Engagement",
       description:
         "Developed backend services for the QMAS quality compliance management platform.",
+      highlights: [
+        "Built and maintained compliance APIs during a 2-year engagement (Oct 2021 - Oct 2023).",
+        "Implemented Node.js, TypeScript, and NestJS services integrated with React-based product modules.",
+        "Shipped production features for regulated quality and compliance workflows.",
+      ],
     },
     {
       company: "DevPanel",
@@ -68,8 +99,14 @@ export const RESUME_DATA: ResumeData = {
       title: "Backend Developer & DevOps Engineer",
       start: "May 2020",
       end: "Aug 2023",
+      engagementType: "Remote Engagement",
       description:
         "Scaled and operated high-traffic sites on AWS with a focus on reliability, deployment flow, and cost efficiency.",
+      highlights: [
+        "Owned backend and DevOps execution across a 3+ year engagement (May 2020 - Aug 2023).",
+        "Operated AWS-hosted workloads with emphasis on deployment reliability and incident handling.",
+        "Improved release consistency through tighter build and operations workflows.",
+      ],
     },
     {
       company: "INFOdation",
@@ -78,8 +115,14 @@ export const RESUME_DATA: ResumeData = {
       title: "Technical Lead",
       start: "May 2018",
       end: "Mar 2022",
+      engagementType: "Direct Employment",
       description:
         "Defined technical solutions and led implementation across multiple client projects.",
+      highlights: [
+        "Led technical solutioning over a 3+ year period (May 2018 - Mar 2022).",
+        "Translated business requirements into executable backend architecture and delivery plans.",
+        "Guided implementation across multiple concurrent client initiatives.",
+      ],
     },
     {
       company: "Pangara AB",
@@ -88,8 +131,14 @@ export const RESUME_DATA: ResumeData = {
       title: "Senior WordPress Developer",
       start: "Jan 2018",
       end: "Mar 2022",
+      engagementType: "Consulting",
       description:
         "Delivered custom WordPress and ecommerce implementations for Nordic clients.",
+      highlights: [
+        "Completed 4+ years of consulting delivery (Jan 2018 - Mar 2022) for Nordic customers.",
+        "Built custom WordPress and WooCommerce implementations for business-facing websites.",
+        "Handled both feature delivery and long-term maintenance for production storefronts.",
+      ],
     },
     {
       company: "WiseRobot",
@@ -98,8 +147,14 @@ export const RESUME_DATA: ResumeData = {
       title: "PHP / Node.js Backend Developer",
       start: "Nov 2014",
       end: "May 2018",
+      engagementType: "Direct Employment",
       description:
         "Built backend features, test coverage, and bug fixes for PHP and Node.js products.",
+      highlights: [
+        "Delivered backend development for 3+ years (Nov 2014 - May 2018) across PHP and Node.js systems.",
+        "Implemented features, fixes, and test improvements in active production codebases.",
+        "Supported full delivery flow from coding to QA handoff and issue resolution.",
+      ],
     },
     {
       company: "Bestarion",
@@ -108,8 +163,13 @@ export const RESUME_DATA: ResumeData = {
       title: "Frontend Developer",
       start: "Jan 2020",
       end: "Mar 2020",
+      engagementType: "Part-time Contract",
       description:
         "Contributed to a Vue.js project by shipping UI components and frontend features.",
+      highlights: [
+        "Contributed during a focused 3-month part-time engagement (Jan 2020 - Mar 2020).",
+        "Delivered Vue.js components and UI features aligned with existing frontend architecture.",
+      ],
     },
   ],
   skills: [
