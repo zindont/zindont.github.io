@@ -202,21 +202,6 @@ export const RESUME_DATA: ResumeData = {
         "Supported Linux operations, QA workflows, and system maintenance.",
       ],
     },
-    {
-      company: "Freelancer",
-      badges: ["HTML", "WordPress", "Tailwind CSS"],
-      title: "Web Developer",
-      start: "Jun 2015",
-      end: null,
-      engagementType: "Freelance",
-      description:
-        "Freelance web development across WordPress projects and custom frontend requirements.",
-      highlights: [
-        "Ongoing freelance work since Jun 2015.",
-        "Delivered websites and feature updates using HTML and WordPress.",
-        "Handled project-based implementation and maintenance tasks.",
-      ],
-    },
   ],
   skills: [
     "Node.js",
