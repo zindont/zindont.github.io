@@ -292,7 +292,7 @@ export const RESUME_DATA: ResumeData = {
       },
     },
     {
-      title: "WiseRobot Ecommerce Delivery",
+      title: "WiseRobot",
       techStack: ["PHP", "WordPress", "Magento", "Linux"],
       description:
         "Backend and ecommerce implementation across WordPress/Magento systems with operations support.",
