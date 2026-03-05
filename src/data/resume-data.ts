@@ -301,5 +301,25 @@ export const RESUME_DATA: ResumeData = {
         href: "https://wiserobot.com/",
       },
     },
+    {
+      title: "Motion Design",
+      techStack: ["Vue.js", "Nuxt.js", "Node.js", "AWS"],
+      description:
+        "Animation platform for interactive motion effects on web elements.",
+      link: {
+        label: "motion-design.app",
+        href: "http://motion-design.app",
+      },
+    },
+    {
+      title: "Kamixa",
+      techStack: ["WordPress", "WooCommerce", "Vue.js"],
+      description:
+        "Ecommerce experience implementation for interior design products.",
+      link: {
+        label: "kamixa.se",
+        href: "https://kamixa.se",
+      },
+    },
   ],
 } as const;
