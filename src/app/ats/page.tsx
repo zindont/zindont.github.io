@@ -107,14 +107,18 @@ export default function AtsResumePage() {
             >
               <h3 className="text-lg font-semibold">
                 {item.title} |{" "}
-                <a
-                  className="underline"
-                  href={item.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {item.company}
-                </a>
+                {item.link ? (
+                  <a
+                    className="underline"
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {item.company}
+                  </a>
+                ) : (
+                  item.company
+                )}
               </h3>
               <p className="text-sm">
                 {item.start} - {item.end ?? "Present"}

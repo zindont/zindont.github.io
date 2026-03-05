@@ -33,7 +33,7 @@ export interface ResumeData {
   }>;
   work: Array<{
     company: string;
-    link: string;
+    link?: string;
     badges: string[];
     title: string;
     start: string;
