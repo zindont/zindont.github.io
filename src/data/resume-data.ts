@@ -321,5 +321,63 @@ export const RESUME_DATA: ResumeData = {
         href: "https://kamixa.se",
       },
     },
+    {
+      title: "Frankie Frank",
+      techStack: ["WordPress", "WooCommerce", "Stripe"],
+      description:
+        "Customized ecommerce store delivery with Stripe payment flows, checkout optimization, and WooCommerce automation.",
+      link: {
+        label: "frankie-frank.com",
+        href: "https://frankie-frank.com/",
+      },
+    },
+    {
+      title: "Tapajos.se",
+      techStack: ["WordPress"],
+      description:
+        "Real-estate and planning company website implementation on WordPress.",
+      link: {
+        label: "tapajos.se",
+        href: "https://tapajos.se",
+      },
+    },
+    {
+      title: "HAITRUNGSHIPPING",
+      techStack: ["WordPress", "WooCommerce"],
+      description:
+        "Shipment tracking workflow implementation integrated with WooCommerce.",
+      link: {
+        label: "haitrungshipping.com",
+        href: "https://haitrungshipping.com",
+      },
+    },
+    {
+      title: "Nha Trang Review",
+      techStack: ["WordPress", "Content Platform"],
+      description: "Travel and lifestyle content platform built on WordPress.",
+      link: {
+        label: "nhatrangreview.info",
+        href: "https://www.nhatrangreview.info",
+      },
+    },
+    {
+      title: "Nha Trang Dat Viet",
+      techStack: ["WordPress", "Real Estate"],
+      description:
+        "Real-estate listing website implementation with custom WordPress setup.",
+      link: {
+        label: "nhatrangdatviet.com",
+        href: "https://nhatrangdatviet.com",
+      },
+    },
+    {
+      title: "Melosa Garden",
+      techStack: ["WordPress", "Real Estate"],
+      description: "Real-estate showcase website built for project marketing.",
+      link: {
+        label: "melosagarden.com.vn",
+        href: "https://melosagarden.com.vn",
+      },
+    },
   ],
 } as const;
