@@ -5,8 +5,7 @@ export const RESUME_DATA: ResumeData = {
   initials: "AH",
   location: "Nha Trang, Vietnam (GMT+7)",
   locationLink: "https://www.google.com/maps/place/Nha+Trang",
-  about:
-    "Backend Developer and Technical Specialist focused on scalable Node.js systems, integrations, and ecommerce operations.",
+  about: "Backend Software Engineer",
   summary:
     "Backend engineer with 10+ years building SaaS, ecommerce, and internal platforms. Currently full-time Backend Developer at ICW (Feb 2024 - Present), with prior 4+ year delivery at Marketflow and hands-on ownership across Node.js, NestJS, WordPress/WooCommerce, and production operations.",
   impactHighlights: [
