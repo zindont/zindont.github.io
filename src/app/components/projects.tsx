@@ -115,14 +115,59 @@ interface ProjectsProps {
   projects: (typeof RESUME_DATA)["projects"];
 }
 
+const FEATURED_PROJECT_COUNT = 4;
+
 export function Projects({ projects }: ProjectsProps) {
+  const featuredProjects = projects.slice(0, FEATURED_PROJECT_COUNT);
+  const remainingProjects = projects.slice(FEATURED_PROJECT_COUNT);
+
   return (
     <Section className="scroll-mb-16 print:space-y-4">
       <h2 className="section-title" id="side-projects">
         Selected Projects
       </h2>
       <div
-        className="-mx-3 grid grid-cols-1 gap-3 md:grid-cols-2 print:grid-cols-3 print:gap-2"
+        className="-mx-3 grid grid-cols-1 gap-3 md:grid-cols-2 print:hidden"
+        role="feed"
+        aria-labelledby="side-projects"
+      >
+        {featuredProjects.map((project) => (
+          <article
+            key={project.title}
+            className="h-full print:hover:shadow-none"
+          >
+            <ProjectCard
+              title={project.title}
+              description={project.description}
+              tags={project.techStack}
+              link={project.link?.href}
+            />
+          </article>
+        ))}
+      </div>
+
+      {remainingProjects.length > 0 ? (
+        <details className="mt-3 rounded-lg border border-border/70 bg-white/70 p-3 print:hidden">
+          <summary className="cursor-pointer list-none font-mono text-sm text-primary hover:underline">
+            Show all projects ({projects.length} total)
+          </summary>
+          <div className="-mx-3 mt-3 grid grid-cols-1 gap-3 md:grid-cols-2">
+            {remainingProjects.map((project) => (
+              <article key={project.title} className="h-full">
+                <ProjectCard
+                  title={project.title}
+                  description={project.description}
+                  tags={project.techStack}
+                  link={project.link?.href}
+                />
+              </article>
+            ))}
+          </div>
+        </details>
+      ) : null}
+
+      <div
+        className="hidden grid-cols-3 gap-2 print:grid"
         role="feed"
         aria-labelledby="side-projects"
       >
