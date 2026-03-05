@@ -12,7 +12,7 @@ export const RESUME_DATA: ResumeData = {
   impactHighlights: [
     "10+ years of engineering delivery across backend and platform roles (Nov 2014 - Present).",
     "7+ years in technical leadership responsibilities (May 2018 - Present).",
-    "4+ years leading cross-company execution between employer and client (Wizy -> Marketflow, Jun 2021 - Present).",
+    "4+ years leading cross-company execution between employer and client (Wizy -> Marketflow, Jun 2021 - Jul 2025).",
     "Hands-on ownership from architecture and implementation to release governance and production support.",
   ],
   avatarUrl: "/avatar.jpg",
@@ -43,7 +43,7 @@ export const RESUME_DATA: ResumeData = {
       badges: ["Technical Lead", "Node.js", "Payments", "SaaS"],
       title: "Technical Lead",
       start: "Jun 2021",
-      end: null,
+      end: "Jul 2025",
       engagementType: "Client Project",
       employer: {
         company: "Wizy.vn",
@@ -56,7 +56,7 @@ export const RESUME_DATA: ResumeData = {
       description:
         "Delivered backend architecture and payment integrations for Marketflow as a long-term client program under Wizy.",
       highlights: [
-        "Owned delivery across a 4+ year engagement (Jun 2021 - Present) for SaaS and payment-critical workflows.",
+        "Owned delivery across a 4+ year engagement (Jun 2021 - Jul 2025) for SaaS and payment-critical workflows.",
         "Coordinated roadmap, technical decisions, and releases between 2 organizations: Marketflow stakeholders and Wizy engineering.",
         "Maintained continuous production support while shipping backend features throughout the engagement lifecycle.",
       ],
@@ -200,7 +200,7 @@ export const RESUME_DATA: ResumeData = {
   ],
   projects: [
     {
-      title: "Marketflow Platform Delivery",
+      title: "Marketflow",
       techStack: ["Node.js", "Payments", "SaaS", "Technical Leadership"],
       description:
         "4+ year backend delivery stream for payment and business-critical SaaS workflows.",
@@ -249,7 +249,7 @@ export const RESUME_DATA: ResumeData = {
       },
     },
     {
-      title: "DevPanel High-Traffic Operations",
+      title: "DevPanel",
       techStack: ["Node.js", "AWS", "DevOps", "CI/CD"],
       description:
         "Backend and cloud operations ownership for high-traffic production websites over a multi-year engagement.",
