@@ -147,7 +147,7 @@ export function Projects({ projects }: ProjectsProps) {
       </div>
 
       {remainingProjects.length > 0 ? (
-        <details className="mt-3 rounded-lg border border-border/70 bg-white/70 p-3 print:hidden">
+        <details className="-mx-3 mt-3 rounded-lg border border-border/70 bg-white/70 p-3 print:hidden">
           <summary className="cursor-pointer list-none font-mono text-sm text-primary hover:underline">
             Show all projects ({projects.length} total)
           </summary>
