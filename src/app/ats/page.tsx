@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { RESUME_DATA } from "@/data/resume-data";
 import { generateResumeStructuredData } from "@/lib/structured-data";
+import { sortWorkTimeline } from "@/lib/work-timeline";
 
 export const metadata: Metadata = {
   title: `${RESUME_DATA.name} - ATS Resume`,
@@ -33,6 +34,7 @@ function renderCompany(label: string, company: string, link?: string) {
 
 export default function AtsResumePage() {
   const structuredData = generateResumeStructuredData();
+  const sortedWork = sortWorkTimeline(RESUME_DATA.work);
 
   return (
     <>
@@ -100,7 +102,7 @@ export default function AtsResumePage() {
 
         <section className="mt-5">
           <h2 className="text-xl font-bold">Work Experience</h2>
-          {RESUME_DATA.work.map((item) => (
+          {sortedWork.map((item) => (
             <article
               key={`${item.company}-${item.start}`}
               className="mt-4 border-b border-slate-200 pb-4 last:border-b-0"

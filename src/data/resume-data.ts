@@ -37,6 +37,21 @@ export const RESUME_DATA: ResumeData = {
   ],
   work: [
     {
+      company: "AllRide",
+      badges: ["WooCommerce", "Payments", "Contract", "Remote"],
+      title: "Backend Developer / WooCommerce Specialist",
+      start: "Jun 2025",
+      end: "Jul 2025",
+      engagementType: "Contract",
+      description:
+        "Supported the migration of WooCommerce payment systems from Stripe to Mollie with minimal service disruption.",
+      highlights: [
+        "Optimized high-traffic ecommerce performance, including page-load and checkout reliability.",
+        "Provided operational support for AllRide's WooCommerce infrastructure.",
+        "Collaborated with product and DevOps teams on secure payment workflow execution.",
+      ],
+    },
+    {
       company: "ICW",
       link: "https://icw.io/",
       badges: ["Node.js", "NestJS", "Backend", "Remote"],
@@ -54,18 +69,19 @@ export const RESUME_DATA: ResumeData = {
       ],
     },
     {
-      company: "AllRide",
-      badges: ["WooCommerce", "Payments", "Contract", "Remote"],
-      title: "Backend Developer / WooCommerce Specialist",
-      start: "Jun 2025",
-      end: "Jul 2025",
-      engagementType: "Contract",
+      company: "ICW",
+      link: "https://icw.io/",
+      badges: ["Node.js", "NestJS", "Backend", "Remote"],
+      title: "Backend Developer",
+      start: "Oct 2021",
+      end: "Oct 2023",
+      engagementType: "Direct Employment",
       description:
-        "Supported the migration of WooCommerce payment systems from Stripe to Mollie with minimal service disruption.",
+        "Backend development for ICW platforms and supporting services.",
       highlights: [
-        "Optimized high-traffic ecommerce performance, including page-load and checkout reliability.",
-        "Provided operational support for AllRide's WooCommerce infrastructure.",
-        "Collaborated with product and DevOps teams on secure payment workflow execution.",
+        "Completed a 2-year full-time engagement (Oct 2021 - Oct 2023).",
+        "Implemented backend features and maintenance tasks for production systems.",
+        "Worked remotely with cross-functional teams on delivery and support.",
       ],
     },
     {
@@ -93,22 +109,6 @@ export const RESUME_DATA: ResumeData = {
       ],
     },
     {
-      company: "ICW",
-      link: "https://icw.io/",
-      badges: ["Node.js", "NestJS", "Backend", "Remote"],
-      title: "Backend Developer",
-      start: "Oct 2021",
-      end: "Oct 2023",
-      engagementType: "Direct Employment",
-      description:
-        "Backend development for ICW platforms and supporting services.",
-      highlights: [
-        "Completed a 2-year full-time engagement (Oct 2021 - Oct 2023).",
-        "Implemented backend features and maintenance tasks for production systems.",
-        "Worked remotely with cross-functional teams on delivery and support.",
-      ],
-    },
-    {
       company: "DevPanel",
       link: "https://devpanel.com/",
       badges: ["Node.js", "AWS", "DevOps", "Part-time"],
@@ -122,38 +122,6 @@ export const RESUME_DATA: ResumeData = {
         "Maintained a 3+ year part-time engagement (May 2020 - Aug 2023).",
         "Handled deployments, environment operations, and incident response for production workloads.",
         "Supported backend improvements for performance and delivery consistency.",
-      ],
-    },
-    {
-      company: "INFOdation",
-      link: "https://infodation.com",
-      badges: ["Technical Lead", "Node.js", "Vue.js", "AWS"],
-      title: "Technical Lead",
-      start: "Aug 2018",
-      end: "Apr 2022",
-      engagementType: "Direct Employment",
-      description:
-        "Led technical direction across Node.js/Vue.js projects and delivery execution.",
-      highlights: [
-        "Led full-time delivery over 3 years 9 months (Aug 2018 - Apr 2022).",
-        "Worked across Node.js, Vue.js, Nuxt.js, AWS, and Laravel stacks.",
-        "Owned planning, implementation guidance, and team coordination.",
-      ],
-    },
-    {
-      company: "Pangara AB",
-      link: "https://pangara.com/portfolios/anhtl",
-      badges: ["WordPress", "PHP", "Freelance"],
-      title: "WordPress Developer",
-      start: "Jan 2018",
-      end: "Aug 2021",
-      engagementType: "Freelance",
-      description:
-        "Freelance WordPress development for Pangara client projects.",
-      highlights: [
-        "Delivered over 3 years 8 months (Jan 2018 - Aug 2021) as a freelance contributor.",
-        "Implemented custom WordPress solutions, plugins, templates, and integration logic.",
-        "Supported ongoing delivery and maintenance across production sites.",
       ],
     },
     {
@@ -174,6 +142,22 @@ export const RESUME_DATA: ResumeData = {
     {
       company: "INFOdation",
       link: "https://infodation.com",
+      badges: ["Technical Lead", "Node.js", "Vue.js", "AWS"],
+      title: "Technical Lead",
+      start: "Aug 2018",
+      end: "Apr 2022",
+      engagementType: "Direct Employment",
+      description:
+        "Led technical direction across Node.js/Vue.js projects and delivery execution.",
+      highlights: [
+        "Led full-time delivery over 3 years 9 months (Aug 2018 - Apr 2022).",
+        "Worked across Node.js, Vue.js, Nuxt.js, AWS, and Laravel stacks.",
+        "Owned planning, implementation guidance, and team coordination.",
+      ],
+    },
+    {
+      company: "INFOdation",
+      link: "https://infodation.com",
       badges: ["PHP", "Laravel", "Web Development"],
       title: "PHP Web Developer",
       start: "May 2018",
@@ -184,6 +168,22 @@ export const RESUME_DATA: ResumeData = {
       highlights: [
         "4-month role (May 2018 - Aug 2018) before transitioning to Technical Lead.",
         "Contributed to backend implementation and maintenance tasks.",
+      ],
+    },
+    {
+      company: "Pangara AB",
+      link: "https://pangara.com/portfolios/anhtl",
+      badges: ["WordPress", "PHP", "Freelance"],
+      title: "WordPress Developer",
+      start: "Jan 2018",
+      end: "Aug 2021",
+      engagementType: "Freelance",
+      description:
+        "Freelance WordPress development for Pangara client projects.",
+      highlights: [
+        "Delivered over 3 years 8 months (Jan 2018 - Aug 2021) as a freelance contributor.",
+        "Implemented custom WordPress solutions, plugins, templates, and integration logic.",
+        "Supported ongoing delivery and maintenance across production sites.",
       ],
     },
     {

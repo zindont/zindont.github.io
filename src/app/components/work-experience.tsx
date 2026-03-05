@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Section } from "@/components/ui/section";
 import type { RESUME_DATA } from "@/data/resume-data";
 import { cn } from "@/lib/utils";
+import { sortWorkTimeline } from "@/lib/work-timeline";
 
 type WorkExperience = (typeof RESUME_DATA)["work"][number];
 type WorkBadges = readonly string[];
@@ -206,6 +207,8 @@ interface WorkExperienceProps {
 }
 
 export function WorkExperience({ work }: WorkExperienceProps) {
+  const sortedWork = sortWorkTimeline(work);
+
   return (
     <Section>
       <h2 className="section-title" id="work-experience">
@@ -216,7 +219,7 @@ export function WorkExperience({ work }: WorkExperienceProps) {
         role="feed"
         aria-labelledby="work-experience"
       >
-        {work.map((item) => (
+        {sortedWork.map((item) => (
           <article key={`${item.company}-${item.start}`}>
             <WorkExperienceItem work={item} />
           </article>
