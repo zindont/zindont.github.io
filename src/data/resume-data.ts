@@ -141,21 +141,6 @@ export const RESUME_DATA: ResumeData = {
       ],
     },
     {
-      company: "INFOdation",
-      link: "https://infodation.com",
-      badges: ["PHP", "Laravel", "Web Development"],
-      title: "PHP Web Developer",
-      start: "May 2018",
-      end: "Aug 2018",
-      engagementType: "Direct Employment",
-      description:
-        "Delivered PHP web-development tasks during an initial onboarding period at INFOdation.",
-      highlights: [
-        "4-month role (May 2018 - Aug 2018) before transitioning to Technical Lead.",
-        "Contributed to backend implementation and maintenance tasks.",
-      ],
-    },
-    {
       company: "Pangara AB",
       link: "https://pangara.com/portfolios/anhtl",
       badges: ["WordPress", "PHP", "Freelance"],
@@ -184,6 +169,21 @@ export const RESUME_DATA: ResumeData = {
       highlights: [
         "Focused 3-month freelance engagement (Feb 2020 - Apr 2020).",
         "Delivered frontend features and UI components with Vue.js.",
+      ],
+    },
+    {
+      company: "INFOdation",
+      link: "https://infodation.com",
+      badges: ["PHP", "Laravel", "Web Development"],
+      title: "PHP Web Developer",
+      start: "May 2018",
+      end: "Aug 2018",
+      engagementType: "Direct Employment",
+      description:
+        "Delivered PHP web-development tasks during an initial onboarding period at INFOdation.",
+      highlights: [
+        "4-month role (May 2018 - Aug 2018) before transitioning to Technical Lead.",
+        "Contributed to backend implementation and maintenance tasks.",
       ],
     },
     {
