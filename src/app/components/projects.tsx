@@ -151,7 +151,7 @@ export function Projects({ projects }: ProjectsProps) {
           <summary className="cursor-pointer list-none font-mono text-sm text-primary hover:underline">
             Show all projects ({projects.length} total)
           </summary>
-          <div className="-mx-3 mt-3 grid grid-cols-1 gap-3 md:grid-cols-2">
+          <div className="mt-3 grid grid-cols-1 gap-3 md:grid-cols-2">
             {remainingProjects.map((project) => (
               <article key={project.title} className="h-full">
                 <ProjectCard
