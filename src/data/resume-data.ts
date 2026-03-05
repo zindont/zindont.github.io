@@ -112,7 +112,7 @@ export const RESUME_DATA: ResumeData = {
       company: "DevPanel",
       link: "https://devpanel.com/",
       badges: ["Node.js", "AWS", "DevOps", "Part-time"],
-      title: "Back End Developer",
+      title: "Backend Developer",
       start: "May 2020",
       end: "Aug 2023",
       engagementType: "Part-time",
