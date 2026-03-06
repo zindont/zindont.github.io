@@ -39,15 +39,24 @@ function BadgeList({ className, badges }: BadgeListProps) {
 interface WorkPeriodProps {
   start: WorkExperience["start"];
   end?: WorkExperience["end"];
+  additionalPeriods?: WorkExperience["additionalPeriods"];
 }
 
-function WorkPeriod({ start, end }: WorkPeriodProps) {
+function WorkPeriod({ start, end, additionalPeriods }: WorkPeriodProps) {
+  const periods = [{ start, end }, ...(additionalPeriods ?? [])];
+
   return (
     <div
-      className="text-xs tabular-nums text-muted-foreground sm:text-sm"
-      title={`Employment period: ${start} to ${end ?? "Present"}`}
+      className="text-xs tabular-nums text-muted-foreground sm:text-right sm:text-sm"
+      title={`Employment period: ${periods
+        .map((period) => `${period.start} to ${period.end ?? "Present"}`)
+        .join("; ")}`}
     >
-      {start} - {end ?? "Present"}
+      {periods.map((period, index) => (
+        <div key={`${period.start}-${period.end ?? "Present"}-${index}`}>
+          {period.start} - {period.end ?? "Present"}
+        </div>
+      ))}
     </div>
   );
 }
@@ -106,8 +115,17 @@ function CompanyMeta({ label, company, link }: CompanyMetaProps) {
 }
 
 function WorkExperienceItem({ work }: WorkExperienceItemProps) {
-  const { company, link, badges, title, start, end, description, highlights } =
-    work;
+  const {
+    company,
+    link,
+    badges,
+    title,
+    start,
+    end,
+    additionalPeriods,
+    description,
+    highlights,
+  } = work;
 
   const workMeta: Array<{ id: string; node: ReactNode }> = [];
 
@@ -154,7 +172,7 @@ function WorkExperienceItem({ work }: WorkExperienceItemProps) {
   return (
     <Card className="border border-border/70 bg-white/75 p-4 transition-colors hover:border-primary/35 print:border-none print:bg-transparent print:p-0">
       <CardHeader className="space-y-2 print:space-y-1">
-        <div className="flex flex-col justify-between gap-x-2 gap-y-1 text-base sm:flex-row sm:items-center">
+        <div className="flex flex-col justify-between gap-x-2 gap-y-1 text-base sm:flex-row sm:items-start">
           <h3 className="inline-flex items-center gap-x-1 font-semibold leading-none print:text-sm">
             <CompanyLink company={company} link={link} />
             <BadgeList
@@ -162,7 +180,11 @@ function WorkExperienceItem({ work }: WorkExperienceItemProps) {
               badges={badges}
             />
           </h3>
-          <WorkPeriod start={start} end={end} />
+          <WorkPeriod
+            start={start}
+            end={end}
+            additionalPeriods={additionalPeriods}
+          />
         </div>
 
         <h4 className="font-mono text-sm font-semibold leading-none text-foreground/80 print:text-[12px]">

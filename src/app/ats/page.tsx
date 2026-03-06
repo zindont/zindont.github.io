@@ -123,7 +123,17 @@ export default function AtsResumePage() {
                 )}
               </h3>
               <p className="text-sm">
-                {item.start} - {item.end ?? "Present"}
+                {[
+                  { start: item.start, end: item.end },
+                  ...(item.additionalPeriods ?? []),
+                ].map((period, index) => (
+                  <span
+                    key={`${period.start}-${period.end ?? "Present"}-${index}`}
+                    className="block"
+                  >
+                    {period.start} - {period.end ?? "Present"}
+                  </span>
+                ))}
               </p>
               <ul className="list-disc pl-5 text-sm">
                 {item.engagementType ? (

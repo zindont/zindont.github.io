@@ -38,6 +38,10 @@ export interface ResumeData {
     title: string;
     start: string;
     end: string | null;
+    additionalPeriods?: Array<{
+      start: string;
+      end: string | null;
+    }>;
     description: string;
     highlights?: readonly string[];
     engagementType?: string;

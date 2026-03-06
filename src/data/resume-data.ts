@@ -58,30 +58,16 @@ export const RESUME_DATA: ResumeData = {
       title: "Backend Developer",
       start: "Feb 2024",
       end: null,
+      additionalPeriods: [{ start: "Oct 2021", end: "Oct 2023" }],
       engagementType: "Direct Employment",
       isPrimaryEmployerRole: true,
       description:
-        "Backend development for ICW products, focused on API delivery and production reliability.",
+        "Backend development for ICW products and supporting services, focused on API delivery and production reliability.",
       highlights: [
         "Current full-time role since Feb 2024, delivering backend features and maintenance.",
+        "Delivered an earlier full-time phase from Oct 2021 - Oct 2023.",
         "Developed and maintained Node.js/NestJS services for production workflows.",
         "Supported remote collaboration, release cycles, and ongoing issue resolution.",
-      ],
-    },
-    {
-      company: "ICW",
-      link: "https://icw.io/",
-      badges: ["Node.js", "NestJS", "Backend", "Remote"],
-      title: "Backend Developer",
-      start: "Oct 2021",
-      end: "Oct 2023",
-      engagementType: "Direct Employment",
-      description:
-        "Backend development for ICW platforms and supporting services.",
-      highlights: [
-        "Completed a 2-year full-time engagement (Oct 2021 - Oct 2023).",
-        "Implemented backend features and maintenance tasks for production systems.",
-        "Worked remotely with cross-functional teams on delivery and support.",
       ],
     },
     {
