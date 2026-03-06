@@ -7,7 +7,7 @@ export const RESUME_DATA: ResumeData = {
   locationLink: "https://www.google.com/maps/place/Nha+Trang",
   about: "Backend Software Engineer",
   summary:
-    "Backend engineer with 10+ years building SaaS, ecommerce, and internal platforms. Currently full-time Backend Developer at ICW (Feb 2024 - Present), with prior 4+ year delivery at Marketflow and hands-on ownership across Node.js, NestJS, WordPress/WooCommerce, and production operations.",
+    "Backend Software Engineer with 10+ years building and operating high-traffic SaaS and ecommerce systems across Node.js/NestJS and WordPress/WooCommerce. Currently at ICW, with 4+ years delivering backend systems at Marketflow, including API integration, lead-routing logic, and production operations. Strong in reliability, performance optimization, and end-to-end backend delivery in remote cross-functional teams.",
   impactHighlights: [
     "10+ years of software engineering delivery across backend and web platforms (Nov 2014 - Present).",
     "Current full-time Backend Developer at ICW (Feb 2024 - Present).",
