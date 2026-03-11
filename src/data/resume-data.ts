@@ -14,7 +14,7 @@ export const RESUME_DATA: ResumeData = {
     "4+ years at Marketflow (Jun 2021 - Jul 2025) building lead-generation and affiliate marketing backend systems.",
     "Hands-on execution across APIs, data pipelines, WooCommerce payment workflows, and production stability.",
   ],
-  avatarUrl: "/avatar.jpg",
+  avatarUrl: "https://github.com/zindont.png",
   personalWebsiteUrl: "https://zindo.info",
   contact: {
     email: "an.ho1991@gmail.com",
